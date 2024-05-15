@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập tính tiền</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- my css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="group-box">
+        <div class="box-detail">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="nav-link active"
+                id="nav-bt1-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-bt1"
+                type="button"
+                role="tab"
+                aria-controls="nav-bt1"
+                aria-selected="true"
+              >
+                <i class="fa-regular fa-folder me-2"></i>
+                Bài 1
+              </button>
+              <button
+                class="nav-link"
+                id="nav-bt2-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-bt2"
+                type="button"
+                role="tab"
+                aria-controls="nav-bt2"
+                aria-selected="false"
+              >
+                <i class="fa-regular fa-folder me-2"></i>
+                Bài 2
+              </button>
+              <button
+                class="nav-link"
+                id="nav-bt3-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-bt3"
+                type="button"
+                role="tab"
+                aria-controls="nav-bt3"
+                aria-selected="false"
+              >
+                <i class="fa-regular fa-folder me-2"></i>
+                Bài 3
+              </button>
+              <button
+                class="nav-link"
+                id="nav-bt4-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-bt4"
+                type="button"
+                role="tab"
+                aria-controls="nav-bt4"
+                aria-selected="false"
+              >
+                <i class="fa-regular fa-folder me-2"></i>
+                Bài 4
+              </button>
+              <button
+                class="nav-link"
+                id="nav-bt5-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-bt5"
+                type="button"
+                role="tab"
+                aria-controls="nav-bt5"
+                aria-selected="false"
+              >
+                <i class="fa-regular fa-folder me-2"></i>
+                Bài 5
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-bt1"
+              role="tabpanel"
+              aria-labelledby="nav-bt1-tab"
+              tabindex="0"
+            >
+              <div class="box-contain">
+                <div class="head-content">
+                  <i class="fa-solid fa-sack-dollar"></i>
+                  <h2>Tính tiền lương nhân viên</h2>
+                </div>
+                <div class="input-luong">
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="tienLuong"
+                      aria-describedby="helpId"
+                      placeholder="Nhập lương một ngày"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="ngayLam"
+                      aria-describedby="helpId"
+                      placeholder="Số ngày làm"
+                    />
+                  </div>
+                </div>
+                <button class="btn button-luong mt-2" id="tinhLuong">
+                  Tính lương
+                </button>
+                <p class="ket-qua">
+                  <i class="fa-solid fa-right-long"></i>
+                </p>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-bt2"
+              role="tabpanel"
+              aria-labelledby="nav-bt2-tab"
+              tabindex="0"
+            >
+              <div class="box-contain">
+                <div class="head-content">
+                  <i class="fa-solid fa-calculator"></i>
+                  <h2>Tính giá trị trung bình</h2>
+                </div>
+                <div class="input-luong">
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="so1"
+                      aria-describedby="helpId"
+                      placeholder="Nhập số thứ 1"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="so2"
+                      aria-describedby="helpId"
+                      placeholder="Nhập số thứ 2"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="so3"
+                      aria-describedby="helpId"
+                      placeholder="Nhập số thứ 3"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="so4"
+                      aria-describedby="helpId"
+                      placeholder="Nhập số thứ 4"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="so5"
+                      aria-describedby="helpId"
+                      placeholder="Nhập số thứ 5"
+                    />
+                  </div>
+                </div>
+                <button class="btn button-luong mt-2" id="tinhTrungBinh">
+                  Tính trung bình
+                </button>
+                <p class="ket-qua-2">
+                  <i class="fa-solid fa-right-long"></i>
+                </p>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-bt3"
+              role="tabpanel"
+              aria-labelledby="nav-bt3-tab"
+              tabindex="0"
+            >
+              <div class="box-contain">
+                <div class="head-content">
+                  <i class="fa-solid fa-coins"></i>
+                  <h2>Quy đổi tiền</h2>
+                </div>
+                <div class="input-luong">
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="tienUSD"
+                      aria-describedby="helpId"
+                      placeholder="Nhập số tiền USD"
+                    />
+                  </div>
+                </div>
+                <button class="btn button-luong mt-2" id="quyDoi">
+                  Quy đổi tiền
+                </button>
+                <p class="ket-qua-3">
+                  <i class="fa-solid fa-right-long"></i>
+                </p>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-bt4"
+              role="tabpanel"
+              aria-labelledby="nav-bt4-tab"
+              tabindex="0"
+            >
+              <div class="box-contain">
+                <div class="head-content">
+                  <i class="fa-solid fa-ruler-combined"></i>
+                  <h2>Tính diện tích, chu vi hình chữ nhật</h2>
+                </div>
+                <div class="input-luong">
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="chieuDai"
+                      aria-describedby="helpId"
+                      placeholder="Nhập chiều dài"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="chieuRong"
+                      aria-describedby="helpId"
+                      placeholder="Nhập chiều rộng"
+                    />
+                  </div>
+                </div>
+                <button class="btn button-luong mt-2" id="tinh">Tính</button>
+                <p class="ket-qua-4">
+                  <i class="fa-solid fa-right-long"></i>
+                </p>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-bt5"
+              role="tabpanel"
+              aria-labelledby="nav-bt5-tab"
+              tabindex="0"
+            >
+              <div class="box-contain">
+                <div class="head-content">
+                  <i class="fa-solid fa-plus-minus"></i>
+                  <h2>Tính tổng 2 ký số</h2>
+                </div>
+                <div class="input-luong">
+                  <div class="mb-3">
+                    <label for="" class="form-label"></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name=""
+                      id="haiSo"
+                      aria-describedby="helpId"
+                      placeholder="Nhập số có hai chữ số"
+                    />
+                  </div>
+                </div>
+                <button class="btn button-luong mt-2" id="tinhTong">
+                  Tính tổng
+                </button>
+                <p class="ket-qua-5">
+                  <i class="fa-solid fa-right-long"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
